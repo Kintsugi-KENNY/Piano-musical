@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #94B49F;
+    margin: 0;
+}
+
+.grid-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px 10px;
+    padding: 30px;
+    grid-template-areas:
+    "img-1 img-2"
+    "img-1  img-3"
+    "img-4 img-4" ;
+}
+
+.img-1 {
+    grid-area: img-1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content-max-content));
+  gap: 20px 20px;
+  padding: 5px;
+  background-color: #BFDB38;
+}
+
+.img-2 {
+    grid-area: img-2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content-max-content));
+    gap: 20px 20px;
+  padding: 5px;
+  background-color: #FC7300;
+}
+.img-3 {
+    grid-area: img-3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content-max-content));
+    gap: 20px 20px;
+  padding: 5px;
+  background-color: #00425A;
+}
+.img-4 {
+    grid-area: img-4;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content-max-content));
+    gap: 20px 20px;
+  padding: 5px;
+  background-color: #1F8A70;
+}
+
+
+
+/*  sonidos */
+
+#grid-sonidos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 30%);
+    gap: 10px 10px;
+    padding: 30px;
+}
+
+.soni-flauta {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.soni-clarinete {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.soni-fagot {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.soni-piccolo {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.soni-oboe {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+/* cuerdas */
+
+.soni-viola {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.soni-violin {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.soni-bajo {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.soni-cello {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+/* metales */
+
+.soni.tuba {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.soni-trompeta {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.soni-trombon {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.soni-corno {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+
+
+
+
+
+
+
+

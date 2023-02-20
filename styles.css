@@ -129,6 +129,10 @@ grid-template-rows: repeat(10, 100%);
   background-size: cover;
   background-position: center;
 }
+
+p {
+  color: #000000;
+}
 /* cuerdas */
 .bajo {
   background-image: url(img-sinfonicos/bajo.jpg);
@@ -205,7 +209,7 @@ grid-template-rows: repeat(10, 100%);
 }
 
 .tuba {
-  background-image: url(img-sinfonicos/tuba.avif);
+  background-image: url(img-sinfonicos/tuba.jpeg);
   grid-column: 3/4;
   grid-row: 5/6;
 }
@@ -248,7 +252,7 @@ grid-template-rows: repeat(10, 100%);
   border: 2px solid;
   border-radius: 10px;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px;
   background: #000000;
   color: #fff;
   font-size: 1.5rem;
@@ -259,9 +263,10 @@ grid-template-rows: repeat(10, 100%);
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-
-  margin: 10% 40px 5%;
+  margin: 10% 30% 10%;
 }
+
+
 .footer-boton:hover {
   color: #000000;
   background: #fff;
