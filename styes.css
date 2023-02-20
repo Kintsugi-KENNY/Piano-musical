@@ -6,10 +6,8 @@
 
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #A75D5D;
+  
+  background-color: #94B49F;
 
 }
 
@@ -34,14 +32,14 @@ body {
   height: 230px;
   border-radius: 0 0 6px 6px;
 
-  background-color: antiquewhite;
+  background-color: #fff;
   border: 3px solid black;
   margin-left: -4px;
   cursor: pointer;
 }
 
 .teclas-blancas:hover {
-  background-color: #FFC3A1;
+  background-color:beige;
 
 }
 
@@ -65,7 +63,7 @@ body {
 }
 
 .teclas-negras:hover {
-  background-color: #FFC3A1;
+  background-color: #bbb;
 }
 
 
@@ -111,154 +109,136 @@ body {
 
 .titulo {
   font-size: 2rem;
-
   justify-content: center;
   align-items: center;
 }
 
 /* main */
 
-#main {
-  flex-grow: 1;
+
+.container {
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(10, 100%);
+
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-}
 
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* cuerdas */
 .bajo {
-  background-color: aquamarine;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/bajo.jpg);
+  grid-column: 1/2;
+  grid-row: 1/4;
 }
 
 .violin {
-  background-color: azure;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/violin.jpg);
+  grid-column: 2/4;
+  grid-row: 1/2;
 }
 
 .cello {
-  background-color: blue;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/cello.jpg);
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
 
 .viola {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/viola.jpg);
+  grid-column: 3/5;
+  grid-row: 2/3;
 }
 
 /* maderas */
 .flauta {
-  background-color: antiquewhite;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/flauta.jpg);
+  grid-column: 4/5;
+  grid-row: 4/5; 
 }
 
 .piccolo {
-  background-color: #A75D5D;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/piccolo.jpg);
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 .clarinete {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/clarinete.jpg);
+  grid-column: 2/4;
+  grid-row: 4/5;
 }
 
 .oboe {
-  background-color: beige;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/oboe.jpg);
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .fagot {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/fagot.png);
+  grid-column: 2/5;
+  grid-row: 3/4;
 }
 
 /* metales */
 .corno {
-  background-color: aqua;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/corno.jpg);
+  grid-column: 1/3;
+  grid-row: 5/6;
 }
 
 .trompetas {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/trompetas.png);
+  grid-column: 1/4;
+  grid-row: 6/7;
 }
 
 .trombones {
-  background-color: #A75D5D;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/trombones.jpg);
+  grid-column: 4/5;
+  grid-row: 5/7;
 }
 
 .tuba {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/tuba.avif);
+  grid-column: 3/4;
+  grid-row: 5/6;
 }
 
 /* percusión */
 
 .timbales {
-  background-color: #fff;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/timbal.jpg);
+  grid-column: 3/5;
+  grid-row: 7/8;
 }
 
 .platillos {
-  background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/platillos.jpg);
+  grid-column: 2/3;
+  grid-row: 7/8;
+ 
 }
 
 .tambor {
-  background-color: #A75D5D;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+  background-image: url(img-sinfonicos/tambor.jpeg);
+  grid-column: 1/2;
+  grid-row: 7/8;
+  background-color: #fff;
+  
 }
 
 .marimba {
+  background-image: url(img-sinfonicos/marim.jpg);
+  grid-column: 1/5;
+  grid-row: 8/10;
   background-color: #FFC3A1;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
-}
-
-.triangulo {
-  background-color: #A75D5D;
-  width: 300px;
-  height: 400px;
-  flex-grow: 1;
+ 
 }
 
 
@@ -266,11 +246,11 @@ body {
 
 .footer-boton {
   border: 2px solid;
-  border-radius: 50px;
+  border-radius: 10px;
   text-decoration: none;
   padding: 5px 10px;
-  background: #FFC6D3;
-  color: #000000;
+  background: #000000;
+  color: #fff;
   font-size: 1.5rem;
   transition: all .3s;
   opacity: 0.9;
@@ -283,8 +263,8 @@ body {
   margin: 10% 40px 5%;
 }
 .footer-boton:hover {
-  color: #FFC6D3;
-  background: #000000;
+  color: #000000;
+  background: #fff;
 }
 
 
