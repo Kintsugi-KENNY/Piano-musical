@@ -130,6 +130,8 @@ grid-template-rows: repeat(10, 100%);
 
 p {
   color: #000000;
+  font-size:large;
+  
 }
 /* cuerdas */
 .bajo {

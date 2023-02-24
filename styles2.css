@@ -12,49 +12,96 @@ body {
 .grid-imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
     gap: 10px 10px;
     padding: 30px;
     grid-template-areas:
-    "img-1 img-2"
-    "img-1  img-3"
-    "img-4 img-4" ;
+    "img-1  img-2"
+    "img-1  img-2"
+    "img-3  img-4" 
+    "img-3  img-4"
+    "img-3  img-4";
 }
 
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+/* cuerdas */
 .img-1 {
     grid-area: img-1;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, minmax(min-content-max-content));
+    grid-template-rows: repeat(3, 1fr);
   gap: 20px 20px;
-  padding: 5px;
+  padding: 5px; 
   background-color: #BFDB38;
+  justify-content: center;
+}
+.violin {
+    background-image: url(img-sinfonicos/violin.jpg);
+}
+.viola {
+    background-image: url(img-sinfonicos/viola.jpg)
+}
+.cello{ 
+    background-image: url(img-sinfonicos/cello.jpg);
+}
+.bajo {
+    background-image: url(img-sinfonicos/bajo.jpg);
 }
 
+/* metales */
 .img-2 {
     grid-area: img-2;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(min-content-max-content));
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px 20px;
   padding: 5px;
   background-color: #FC7300;
 }
+.corno {
+    background-image: url(img-sinfonicos/corno.jpg);
+}
+.trompeta {
+    background-image: url(img-sinfonicos/trompetas.png);
+}
+.trombon {
+    background-image: url(img-sinfonicos/trombones.jpg);
+}
+.tuba {
+    background-image: url(img-sinfonicos/tuba.jpeg);
+}
+
+/* percusion */
 .img-3 {
     grid-area: img-3;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(min-content-max-content));
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px 20px;
   padding: 5px;
   background-color: #00425A;
 }
+.marimba {
+    background-image: url(img-sinfonicos/marim.jpg);
+}
+.timbales {
+    background-image: url(img-sinfonicos/timbal.jpg);
+}
+.platillos {
+    background-image: url(img-sinfonicos/platillos.jpg);
+}
+.tambor {
+    background-image: url(img-sinfonicos/tambor.jpeg);
+}
+
 .img-4 {
     grid-area: img-4;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(min-content-max-content));
@@ -62,6 +109,22 @@ body {
   padding: 5px;
   background-color: #1F8A70;
 }
+.piccolo {
+    background-image: url(img-sinfonicos/piccolo.jpg);
+}
+.flauta {
+    background-image: url(img-sinfonicos/flauta.jpg);
+}
+.oboe {
+    background-image: url(img-sinfonicos/oboe.jpg);
+}
+.clarinete {
+    background-image: url(img-sinfonicos/clarinete.jpg);
+}
+.fagot {
+    background-image: url(img-sinfonicos/fagot.png);
+}
+
 
 
 
@@ -123,7 +186,7 @@ body {
 }
 
 /* metales */
-
+ 
 .soni.tuba {
     grid-column: 3/4;
     grid-row: 1/2;
